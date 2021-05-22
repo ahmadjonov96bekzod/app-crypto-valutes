@@ -15,7 +15,7 @@ const Coin = () =>{
             .then(res=> {
 
 
-                toast.success("Muaommo yo'q");
+                toast.dark("Muaommo yo'q");
                 setCoins(res.data);
                 console.log(res.data);
                 setLoader(false)
@@ -27,13 +27,12 @@ const Coin = () =>{
     return(
         <div className="container">
             <div className="row ">
+                <h1 className="text-center text-white mb-4">Barcha Cripto valyutalrni Online narxi </h1>
+
                 <div className="col-12 ">
-
-                    <h1 className="text-center text-white mb-5">Barcha Cripto valyutalrni Online narxi va o'sish darajasi</h1>
-
                     {loader ? <div className="page-loader"><PacmanLoader loading={setLoader}/></div>:"" }
 
-                    <table className="table w-100 t-dark table-striped table-hover mb-5">
+                    <table className="table w-100 t-dark table-striped table-hover">
                         <thead>
                         <tr>
                             <th>№</th>
